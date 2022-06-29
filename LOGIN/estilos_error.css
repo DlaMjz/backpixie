@@ -1,0 +1,10 @@
+body{
+    background-image: url(error.jpeg);
+    background-repeat:repeat ;
+}
+
+.tex{
+    float: left;
+    width: 22%;
+    box-sizing: border-box;
+}
