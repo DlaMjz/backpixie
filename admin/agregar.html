@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Administrador</title>
+</head>
+<body>
+    <h1>Tienda Potrero</h1>
+    <button type="submit"><a href="index.php">Inicio</a></button>
+    <button type="submit"><a href="listaradmin.php">Listar ropa</a></button>
+    <button type="submit"><a href="agregar.html">Agregar ropa</a></button>
+    <h2>Agregar ropa</h2>
+    <p>Ingrese los datos de la prenda.</p>
+
+
+    <form method="POST" action="agregar.php" enctype="multipart/form-data">
+        <label>ID</label>
+        <input type="INT" name="ID" placeholder=ID> <br><br>
+        <label>Tipo de prenda</label>
+        <input type="text" name="tipodeprenda" placeholder="Tipo de prenda" required> <br><br>
+        <label>Marca</label>
+        <input type="text" name="marca" placeholder="Marca" required> <br><br>
+        <label>Talle</label>
+        <input type="text" name="talle" placeholder="Talle" required> <br><br>
+        <label>Precio</label>
+        <input type="text" name="precio" placeholder="Precio" required> <br><br>
+        <label>Imagen</label>
+        <input type="file" name="imagen" placeholder="imagen" required > <br><br>
+        <label>Link de Pago</label>
+        <input type="text" name="link" placeholder="Link de Pago"> <br><br>
+        <button type="submit" name="Cancelar" formaction="listaradmin.php">Cancelar</button>
+        <input type="submit" name="submit" value="Ingresar">
+    </form>
+
+
+</body>
+</html>
